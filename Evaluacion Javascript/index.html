@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/styles.css">
+    <script src="js/menu.js"></script>
+   
+    <title>Menu de Equipos de Computo</title>
+</head>
+<body>
+   
+    <header><!-- se define el encabezado de la pagina con el titulo principal 'menu de equipos de computo' -->
+        <h1>Menu de Equipos de Computo</h1>
+    </header>
+<!-- se utiliza la etiqueta main que va a representar el contenido de la pagina -->
+    <main>
+        <section id="pedido"><!-- esto va a proporcionar un identificador unico a esta seccion -->
+            <h2>Realizar Pedido</h2>
+
+            <label for="tipoEquipo">Tipo de Equipo:</label>
+            <select id="tipoEquipo"><!-- menu desplegable con tres opciones-->
+                <option value="pc">Computador de Escritorio</option>
+                <option value="laptop">Computador Laptop</option>
+                <option value="ninguno"> Ninguno</option>
+            </select>
+            <br>
+            <div class="espaciado"></div><!-- se crea un contenedor con la clase espaciodo para dar espacion entre ellos-->
+            <label for="cantidadEquipo">Cantidad de Computadores:</label>
+            <input type="number" id="cantidadEquipo" value="1"><!-- especifica que el valor debe ser numerico y su valor predeterminado en 1 -->
+            <div class="espaciado"></div>
+
+            
+            <label for="tipoConsola">Tipo de Consola:</label>
+            <select id="tipoConsola"><!-- menu desplegable con tres opciones-->
+                <option value="ps5">PlayStation 5</option>
+                <option value="xbox">Xbox 360</option>
+                <option value="ninguno"> Ninguno</option>
+            </select>
+            <br>
+            <div class="espaciado"></div>
+            <label for="cantidadConsola">Cantidad de Consolas:</label>
+            <input type="number" id="cantidadConsola" value="1"><!-- especifica que el valor debe ser numerico y su valor predeterminado en 1 -->
+            <div class="espaciado"></div>
+
+            <label for="tipoCelular">Tipo de Celular:</label>
+            <select id="tipoCelular"><!-- menu desplegable con tres opciones-->
+                <option value="android">Android</option>
+                <option value="iphone">iPhone</option>
+                <option value="ninguno"> Ninguno</option>
+            </select>
+            <br>
+            <div class="espaciado"></div>
+            <label for="cantidadCelular">Cantidad de Celulares:</label>
+            <input type="number" id="cantidadCelular" value="1"><!-- especifica que el valor debe ser numerico y su valor predeterminado en 1 -->
+            <div class="espaciado"></div>
+           
+            <label for="tipoMouse">Tipo de Mouse:</label>
+            <select id="tipoMouse"><!-- menu desplegable con tres opciones-->
+                <option value="optico">optico</option>
+                <option value="inalambrico">Inalambrico</option>
+                <option value="ninguno"> Ninguno</option>
+            </select>
+            <br>
+            <div class="espaciado"></div>
+            <label for="cantidadMouse">Cantidad de Mouses:</label>
+            <input type="number" id="cantidadMouse" value="1"><!-- especifica que el valor debe ser numerico y su valor predeterminado en 1 -->
+            <div class="espaciado"></div>
+
+          </section>
+
+        <section id="resultado">
+            <button onclick="realizarPedido()">Realizar Pedido</button><!--se crea un boton llamando a la funcion realizar pedido -->
+            <button onclick="mostrarProductos()">Mostrar Productos</button><!-- se crea un boton llamando a la funcion mostrar productos  -->
+            <h2>Resultado del Pedido</h2>
+            <p id="mensajeResultado"></p><!-- id llama a mensajeResultado donde va mostrar el resultado pedido -->
+
+        <!-- contenedor invisible para mostrar la informacion detallada de productos -->
+            <div id="infoProductos" style="display: none;"></div>
+            <button onclick="ocultarProductos()">Ocultar Productos</button><!-- este boton, al hacer clic, ejecutara la funcion para ocultar productos -->
+        </section>
+    </main>
+</body>
+</html>

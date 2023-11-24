@@ -1,0 +1,93 @@
+body { /*se van a establcer los estilos del cuerpo-body*/
+    font-family: 'Arial', sans-serif;/*se establece una fuente de letra*/
+    margin: 0; /*va a eliminar margenes predeterminadas del body*/
+    padding: 0; /*va a eliminar el relleno predeterminado del body*/
+    background-color: #f0f0f0; /*se establece el color de fondo*/
+    background-image: url(/img/imagen\ equipo\ computer.jpg); /*se va establecer la imagen de fondo y enlazar el url de la carpeta imagen y la imagen equipo computer*/
+    background-size: cover; /*para que la imagen se adpate al tamaño de la ventana del navegador*/
+    background-repeat: no-repeat; /*evita que la imagen se repita varias veces*/
+    text-align: center; /*para centrar todo el contenido del cuepo*/
+  }
+
+  /*estilos para el contenedor infoProductos*/
+  #infoProductos {
+    display: none;/*oculta el contenedor de infoProductos*/
+    position: absolute; /*se establece el contenedor como posicion absoluta*/
+    background-color: #fff; /*se establece el color de fondo del contenedor */
+    border: 1px solid #ccc; /*se establace borde del contenedor 1 pixeles*/
+    padding: 10px; /*relleno interno del contenedor establecido en 10px*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*sombra suave alrededor del contenedor*/
+    top: 50%; right:10%; /* asegura que la ventana flotante este por encima del resto del contenido */
+  }
+  
+  /* estilo para el boton de mostrar productos */
+  #mostrarProductosButton {
+    cursor: pointer; /*cursor apuntador-interactivo*/
+    background-color: lightgray; /* color de fondo del color */
+    padding: 5px; /*espaciado interno del boton en 5px*/
+    border: 1px solid #ccc; /*borde del boton en un 1px*/
+    border-radius: 4px;/*bordebrendondeado del boton en 4px*/
+  }
+  
+  /* estilo para cambiar la visibilidad al pasar el cursor */
+  #mostrarProductos:hover, #mostrarProductos.clicked {
+    background-color: rgb(203, 153, 153); /* se establece el color de fondo */
+    cursor: pointer; /*cursor apuntador-interactivo*/
+  }
+/*estilos encabezado pagina*/ 
+  header { 
+    background-color:cadetblue; /*se establece color de fondo */
+    color: white; /*se establece color de la letra */
+    text-align: center; /*se establece el texto centrado*/
+    padding: 1em; /*relleno interno*/
+  }
+/*estilo para el contenido principal de la pagina*/
+  main {
+    max-width: 600px; /*se establece ancho-maximo en 600px*/
+    margin: 20px auto; /*se establece margenes automaticas*/
+    background-color: white; /*color de fondo*/
+    padding: 20px; /*se establece el relleno interno en 20px*/
+    border-radius: 8px; /*se establecen los bordes redondeados en 8px*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*sombra*/
+  }
+/*estilo para las secciones de la pagina*/
+  section {
+    margin-bottom: 20px; /*se establece margenes inferiore en 20px*/
+  }
+  /*estilo para las etiquetas de texto*/
+  label { 
+    display: block; /*se uestra como bloque */
+    margin-bottom: 5px; /*margenes inferiores en 5px*/
+  }
+  /*estilo para selectores y botones*/
+  select, button {
+    margin-top: 5px; /*se establecen margenes superiores en 5px*/
+  }
+  /*estilo para los botones */
+  button {
+    background-color: #333; /*se establece color de fondo del boton*/
+    color: white; /*se establece el color de fondo*/
+    padding: 10px; /*se establece el relleno interno en 10px*/
+    border: none; /*se establece sin borde*/
+    border-radius: 4px; /*se establecen los bordes redondeados en 4px*/
+    cursor: pointer; /*cursor apuntador-interactivo*/
+  }
+  /*estilo para los botones al pasar el cursor*/
+  button:hover {
+    background-color: #555; /*se establece el color de fondo que va a cambiar al pasar el cursor*/
+  }
+  /*espaciado entre los elementos */
+  .espaciado {
+    margin-bottom: 20px} /*se establecen las margenes inferiores en 20px*/
+  /*estilo de la etiqueta h1*/
+  h1{
+    font-family: 'Comic Sans MS'; /*se establece un tipo de fuente*/
+  }
+  /*estilo de la etiqueta h2*/
+  h2{
+    font-family: 'Cambria Rounded'; /*se establece un tipo de fuente*/
+  }
+  /*estilo para la etiqueta label*/
+  label{
+    font-family: 'Cambria Italic';  /*se establece un tipo de fuente*/
+  }
